@@ -1,0 +1,14 @@
+1. Bootstrap adalah framework CSS yang digunakan untuk mempermudah pembuatan tampilan website agar lebih menarik, terstruktur, dan responsif. Bootstrap menyediakan berbagai komponen dan class siap pakai, seperti navbar, form, tombol, card, dan grid, sehingga pengembang tidak perlu menulis seluruh kode CSS dari awal. Kegunaan Bootstrap adalah mempercepat proses pengembangan website, menjaga konsistensi tampilan, serta memudahkan pembuatan website yang dapat menyesuaikan ukuran layar desktop maupun perangkat mobile.
+2. a) Menggunakan CDN (Content Delivery Network): Bootstrap dihubungkan melalui URL CSS dan JavaScript yang disediakan oleh Bootstrap. Cara ini praktis karena tidak perlu mengunduh file Bootstrap secara manual.
+b) Mengunduh file Bootstrap: File CSS dan JavaScript Bootstrap diunduh dari situs resminya, kemudian disimpan dan dihubungkan ke proyek secara lokal.
+c) Menggunakan package manager: Bootstrap dapat dipasang melalui package manager seperti npm dengan perintah npm install bootstrap. Cara ini umum digunakan dalam proyek pengembangan web yang menggunakan Node.js.
+3. Grid Bootstrap adalah sistem tata letak yang membagi halaman menjadi 12 kolom untuk membantu mengatur posisi dan ukuran elemen website. Grid menggunakan class seperti .container, .row, dan .col agar elemen dapat tersusun secara teratur. Breakpoint adalah batas ukuran layar yang digunakan Bootstrap untuk menyesuaikan tampilan berdasarkan lebar perangkat. Pada halaman login Ruang Baca, class .col-12 col-sm-10 col-md-7 col-lg-5 digunakan agar lebar form menyesuaikan ukuran layar. Form menggunakan seluruh lebar kolom pada layar sangat kecil dan menjadi lebih sempit pada layar yang lebih besar.
+4. .container	Membuat wadah konten dengan lebar yang menyesuaikan ukuran layar, .row	Membuat baris untuk menyusun elemen dalam sistem grid, .col-md-7	Mengatur lebar kolom menjadi 7 dari 12 kolom mulai breakpoint md, .navbar	Membuat komponen navigasi pada website, .form-control	Memberikan tampilan standar pada input formulir, .btn	Memberikan tampilan dasar pada tombol, .btn-success	Memberikan warna hijau pada tombol, .text-center	Membuat teks rata tengah, .d-flex	Mengaktifkan tata letak Flexbox, .shadow	Memberikan efek bayangan pada elemen.
+5. Agar gambar pada website responsif dan menyesuaikan ukuran layar perangkat, Bootstrap menyediakan class .img-fluid. Class ini membuat gambar memiliki lebar maksimum 100% dari elemen induknya dan tinggi otomatis mengikuti proporsi gambar. Dengan aturan ini, gambar tidak melebihi lebar wadahnya dan proporsi gambar tetap terjaga, sehingga gambar dapat ditampilkan dengan baik pada desktop, tablet, maupun smartphone.
+Contoh penggunaannya:
+<img src="gambar.jpg" class="img-fluid" alt="Gambar buku">
+Class .img-fluid menggunakan aturan CSS yang setara dengan:
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
